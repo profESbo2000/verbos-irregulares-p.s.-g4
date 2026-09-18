@@ -48,7 +48,7 @@
       font-size: 1.05rem;
     }
 
-    /* ESTRUCTURA PRINCIPAL (MESA A LA IZQUIERDA, CONJUGACIÓN A LA DERECHA) */
+    /* ESTRUCTURA PRINCIPAL */
     .main-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -183,7 +183,7 @@
       background-color: #ea580c;
     }
 
-    /* ÁREA DE TRABAJO (CONJUGADOR A LA DERECHA) */
+    /* ÁREA DE TRABAJO (DERECHA) */
     .workspace {
       background-color: var(--card-bg);
       border-radius: 20px;
@@ -343,12 +343,12 @@
 
   <script>
     const verbosGrupo4 = [
-      // CATEGORÍA: Cambios en -GO / -OY
+      // CATEGORÍA: Verbos en -GO
       {
         verbo: "HACER",
         ingles: "To do / make",
         icono: "🔨",
-        categoria: "Cambio en -GO / -OY",
+        categoria: "Verbos en -GO",
         info: "Cambio exclusivo en 'Yo': hago",
         conjugaciones: [
           { pronombre: "Yo", raiz: "ha", terminacion: "-go", esIrregular: true },
@@ -360,25 +360,10 @@
         ]
       },
       {
-        verbo: "DAR",
-        ingles: "To give",
-        icono: "🎁",
-        categoria: "Cambio en -GO / -OY",
-        info: "Cambio exclusivo en 'Yo': doy",
-        conjugaciones: [
-          { pronombre: "Yo", raiz: "d", terminacion: "-oy", esIrregular: true },
-          { pronombre: "Tú", raiz: "d", terminacion: "-as", esIrregular: false },
-          { pronombre: "Él / Ella / Usted", raiz: "d", terminacion: "-a", esIrregular: false },
-          { pronombre: "Nosotros/as", raiz: "d", terminacion: "-amos", esIrregular: false },
-          { pronombre: "Vosotros/as", raiz: "d", terminacion: "-ais", esIrregular: false },
-          { pronombre: "Ellos / Ellas / Ustedes", raiz: "d", terminacion: "-an", esIrregular: false }
-        ]
-      },
-      {
         verbo: "PONER",
         ingles: "To put",
         icono: "📦",
-        categoria: "Cambio en -GO / -OY",
+        categoria: "Verbos en -GO",
         info: "Cambio exclusivo en 'Yo': pongo",
         conjugaciones: [
           { pronombre: "Yo", raiz: "pon", terminacion: "-go", esIrregular: true },
@@ -393,7 +378,7 @@
         verbo: "SALIR",
         ingles: "To exit / go out",
         icono: "🚪",
-        categoria: "Cambio en -GO / -OY",
+        categoria: "Verbos en -GO",
         info: "Cambio exclusivo en 'Yo': salgo",
         conjugaciones: [
           { pronombre: "Yo", raiz: "sal", terminacion: "-go", esIrregular: true },
@@ -405,10 +390,87 @@
         ]
       },
       {
+        verbo: "CAER",
+        ingles: "To fall",
+        icono: "🍂",
+        categoria: "Verbos en -GO",
+        info: "Cambio exclusivo en 'Yo': caigo",
+        conjugaciones: [
+          { pronombre: "Yo", raiz: "cai", terminacion: "-go", esIrregular: true },
+          { pronombre: "Tú", raiz: "ca", terminacion: "-es", esIrregular: false },
+          { pronombre: "Él / Ella / Usted", raiz: "ca", terminacion: "-e", esIrregular: false },
+          { pronombre: "Nosotros/as", raiz: "ca", terminacion: "-emos", esIrregular: false },
+          { pronombre: "Vosotros/as", raiz: "ca", terminacion: "-éis", esIrregular: false },
+          { pronombre: "Ellos / Ellas / Ustedes", raiz: "ca", terminacion: "-en", esIrregular: false }
+        ]
+      },
+      {
+        verbo: "TRAER",
+        ingles: "To bring",
+        icono: "🎒",
+        categoria: "Verbos en -GO",
+        info: "Cambio exclusivo en 'Yo': traigo",
+        conjugaciones: [
+          { pronombre: "Yo", raiz: "trai", terminacion: "-go", esIrregular: true },
+          { pronombre: "Tú", raiz: "tra", terminacion: "-es", esIrregular: false },
+          { pronombre: "Él / Ella / Usted", raiz: "tra", terminacion: "-e", esIrregular: false },
+          { pronombre: "Nosotros/as", raiz: "tra", terminacion: "-emos", esIrregular: false },
+          { pronombre: "Vosotros/as", raiz: "tra", terminacion: "-éis", esIrregular: false },
+          { pronombre: "Ellos / Ellas / Ustedes", raiz: "tra", terminacion: "-en", esIrregular: false }
+        ]
+      },
+
+      // CATEGORÍA: Terminación en -OY / Formas Especiales
+      {
+        verbo: "DAR",
+        ingles: "To give",
+        icono: "🎁",
+        categoria: "Terminación en -OY / Especiales",
+        info: "Cambio exclusivo en 'Yo': doy",
+        conjugaciones: [
+          { pronombre: "Yo", raiz: "d", terminacion: "-oy", esIrregular: true },
+          { pronombre: "Tú", raiz: "d", terminacion: "-as", esIrregular: false },
+          { pronombre: "Él / Ella / Usted", raiz: "d", terminacion: "-a", esIrregular: false },
+          { pronombre: "Nosotros/as", raiz: "d", terminacion: "-amos", esIrregular: false },
+          { pronombre: "Vosotros/as", raiz: "d", terminacion: "-ais", esIrregular: false },
+          { pronombre: "Ellos / Ellas / Ustedes", raiz: "d", terminacion: "-an", esIrregular: false }
+        ]
+      },
+      {
+        verbo: "ESTAR",
+        ingles: "To be (location/condition)",
+        icono: "📍",
+        categoria: "Terminación en -OY / Especiales",
+        info: "Cambio exclusivo en 'Yo': estoy",
+        conjugaciones: [
+          { pronombre: "Yo", raiz: "est", terminacion: "-oy", esIrregular: true },
+          { pronombre: "Tú", raiz: "est", terminacion: "-ás", esIrregular: false },
+          { pronombre: "Él / Ella / Usted", raiz: "est", terminacion: "-á", esIrregular: false },
+          { pronombre: "Nosotros/as", raiz: "est", terminacion: "-amos", esIrregular: false },
+          { pronombre: "Vosotros/as", raiz: "est", terminacion: "-áis", esIrregular: false },
+          { pronombre: "Ellos / Ellas / Ustedes", raiz: "est", terminacion: "-án", esIrregular: false }
+        ]
+      },
+      {
+        verbo: "SABER",
+        ingles: "To know (facts/skills)",
+        icono: "💡",
+        categoria: "Terminación en -OY / Especiales",
+        info: "Cambio exclusivo en 'Yo': sé",
+        conjugaciones: [
+          { pronombre: "Yo", raiz: "", terminacion: "sé", esIrregular: true },
+          { pronombre: "Tú", raiz: "sab", terminacion: "-es", esIrregular: false },
+          { pronombre: "Él / Ella / Usted", raiz: "sab", terminacion: "-e", esIrregular: false },
+          { pronombre: "Nosotros/as", raiz: "sab", terminacion: "-emos", esIrregular: false },
+          { pronombre: "Vosotros/as", raiz: "sab", terminacion: "-éis", esIrregular: false },
+          { pronombre: "Ellos / Ellas / Ustedes", raiz: "sab", terminacion: "-en", esIrregular: false }
+        ]
+      },
+      {
         verbo: "VER",
         ingles: "To see",
         icono: "👁️",
-        categoria: "Cambio en -GO / -OY",
+        categoria: "Terminación en -OY / Especiales",
         info: "Mantiene la 'E' original en 'Yo': veo",
         conjugaciones: [
           { pronombre: "Yo", raiz: "v", terminacion: "-eo", esIrregular: true },
@@ -506,7 +568,6 @@
       const desk = document.getElementById('deskArea');
       desk.innerHTML = '';
 
-      // Agrupar los verbos por categoría
       const categorias = [...new Set(verbosGrupo4.map(v => v.categoria))];
 
       categorias.forEach(cat => {
@@ -573,7 +634,7 @@
       grid.innerHTML = '';
 
       selectedVerb.conjugaciones.forEach((item, i) => {
-        const fullWord = item.raiz + item.terminacion.replace('-', '');
+        const fullWord = (item.raiz ? item.raiz : '') + item.terminacion.replace('-', '');
 
         let stemFill = "#e2e8f0";
         let stemStroke = "#94a3b8";
@@ -604,7 +665,7 @@
                        L 1,8 
                        A 4,4 0 0,1 5,4 Z" 
                     fill="${stemFill}" stroke="${stemStroke}" stroke-width="2"/>
-              <text x="60" y="24" class="text-stem" fill="${item.esIrregular ? '#ffffff' : '#1f2937'}">${item.raiz}-</text>
+              <text x="60" y="24" class="text-stem" fill="${item.esIrregular ? '#ffffff' : '#1f2937'}">${item.raiz ? item.raiz + '-' : ''}</text>
 
               <!-- Pieza Terminación -->
               <path d="M 132,4 L 230,4 
